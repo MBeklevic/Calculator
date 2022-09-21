@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: white;
+}
+
+a {
+    text-decoration: none;
+    color: #003566;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    position: absolute;
+    margin-left: auto;
+    margin-top: auto;
+    width: 21rem;
+    text-align: center;
+    border: 2px solid #cce3de;
+    border-radius: 10px;
+    padding: auto;
+    padding-top: 10px;
+    height: auto;
+    background: #f6fff8;
+    font-size: 1.5rem;
+    color: #f6fff8;
+    box-shadow: 5px 5px 5px #cce3de;
+}
+
+.display {
+    display: inline-block;
+    width: 20.3rem;
+    height: 3rem;
+    box-shadow: 1px 1px 1px #cce3de;
+
+}
+
+.display input {
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    background: #264653;
+    color: #a4c3b2;
+    font-size: 2rem;
+    caret-color: #a4c3c2;
+    border-radius: 3px;
+}
+
+.ops {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opsitem {
+    flex-basis: 25%;
+    border: 1px solid #eaf4f4;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 5px;
+    background: #cce3de;
+    font-weight: 700;
+    box-shadow: 3px 3px 4px #cce3de;
+
+}
+
+.opsitem:hover {
+    box-shadow: 5px 5px 4px #cce3de;
+    background: #cce3ee;
+
+}
+
+.opsitem a {
+    display: inline-block;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.calcbody {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.numbers {
+    flex-basis: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-left: 5px;
+}
+
+.number {
+    padding: 5px;
+    height: 3rem;
+    border: 1px solid #eaf4f4;
+    border-radius: 5px;
+    background: #a4c3b2;
+    display: flex;
+    justify-content: left;
+    box-shadow: 3px 3px 4px #cce3de;
+}
+
+.number:hover {
+    box-shadow: 5px 5px 4px #cce3de;
+    background: #a4c3c2;
+}
+
+.number a {
+    display: inline-block;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.equalsign {
+    margin-right: 0.25rem;
+    border: 1px solid #eaf4f4;
+    border-radius: 5px;
+    background: #a4c3b2;
+    padding: 0 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px #cce3de;
+}
+
+.equalsign:hover {
+    box-shadow: 5px 5px 4px #cce3de;
+    background: #a4c3c2;
+}
+
+.equalsign a {
+    display: inline-block;
+    width: 4rem;
+    height: 13.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
